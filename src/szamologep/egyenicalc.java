@@ -225,7 +225,7 @@ public class egyenicalc extends javax.swing.JFrame {
     }//GEN-LAST:event_menu_muv_osztasActionPerformed
 
     private void osztas(){
-        lbl_muvelete.setText(a + "/" + b + "=");
+        lbl_muvelete.setText(a + " / " + b + " = ");
         
     }
     private void ellenorzes(){
@@ -233,6 +233,7 @@ public class egyenicalc extends javax.swing.JFrame {
         
         if (osztas_eredmeny == szamok) {
             lbl_visszajelzes.setText("Helyes válasz!");
+            btn_ellenorzes.setEnabled(false);
         }else{
             lbl_visszajelzes.setText("Helytelen válasz!");
         }
